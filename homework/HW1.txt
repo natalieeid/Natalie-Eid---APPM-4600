@@ -1,0 +1,17 @@
+Microsoft Windows [Version 10.0.22621.2134]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\natal>python3
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> import matplotlib.pyplot as plt
+>>> import math
+>>> X=np.linspace(1.920,2.080,160)
+>>> Ya=(X**9)-18*(X**8)+144*(X**7)-627*(X**6)+2016*(X**5)-4032*(X**4)+5376*(X**3)-4608*(X**2)+2304*X-512
+>>> plt.plot(X,Ya)
+[<matplotlib.lines.Line2D object at 0x0000017E4C022450>]
+>>> Yb=(X-2)**9
+>>> plt.plot(X,Yb)
+[<matplotlib.lines.Line2D object at 0x0000017E4C0128D0>]
+>>> plt.show()
