@@ -44,7 +44,7 @@ to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
 
 
-The code from LAB 1 goes over how to create routines and sub routines in python when coding from the terminal. For this lab it used the example of the dot product. 
+The code from LAB 1 goes over how to create routines and sub routines in python when coding from the terminal. For this lab it used the example of the dot product. It shows you two ways that this can be done using for loops and such. 
 
 
 
