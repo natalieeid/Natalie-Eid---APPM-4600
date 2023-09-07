@@ -42,3 +42,8 @@ collaborate (see also: git help workflows)
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
+
+
+What I'm doing here is not being reflected in my repository, I think that computers must hate me. 
+
+
