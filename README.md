@@ -44,6 +44,7 @@ to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
 
 
-What I'm doing here is not being reflected in my repository, I think that computers must hate me. Its actually working now. Yay! This file contains some basic git instructions on it, and what they do. 
+What I'm doing here is not being reflected in my repository, I think that computers must hate me. Its actually working now. Yay! This file contains some basic git instructions on it, and what they do. This might be helpful to look at in the future. 
+
 
 
