@@ -44,7 +44,7 @@ to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
 
 
-What I'm doing here is not being reflected in my repository, I think that computers must hate me. Its actually working now. Yay! This file contains some basic git instructions on it, and what they do. This might be helpful to look at in the future. 
+The code from LAB 1 goes over how to create routines and sub routines in python when coding from the terminal. For this lab it used the example of the dot product. It shows you two ways that this can be done using for loops and such. It also teaches you about how python works with vectors. 
 
 
 
