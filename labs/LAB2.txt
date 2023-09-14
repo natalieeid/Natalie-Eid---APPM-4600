@@ -1,0 +1,52 @@
+LAB 2 
+Question 4 
+1. 
+a. This interval should approximate the root fairly well, since the sign of the funciton changes in this interval. Depending on the tolerance of the function, the computer might find 1 exactly. 
+Using the tolerance givin on the example code, you get that the root is at 0.99999... which is fairly close to our actual value. 
+
+the approximate root is 0.9999999701976776
+the error message reads: 0
+f(astar) = -2.98023206113385e-08
+
+
+b. This interval will cause a failure of the function as the sign of the function does not change on this interval. 
+Using the example code, we get that the error message reads 1. 
+
+the approximate root is -1
+the error message reads: 1
+f(astar) = 2
+
+c. This interval will have the exact same result as interval a, but will use one more iteration to get to the answer. 
+Using the tolerance givin on the example code, you get that the root is at 0.99999... which is fairly far from our actual value. 
+
+the approximate root is 0.9999999701976776
+the error message reads: 0
+f(astar) = -2.98023206113385e-08
+
+
+
+2. 
+a. This function and interval gives us an out put of 0.9999... meaning that it found the root at 1. 
+
+the approximate root is 0.999999976158142
+the error message reads: 0
+f(astar) = -1.9073486775766932e-07
+
+b. This function and interval give us an error output of 1 since the interval does not change signs on this interval. 
+
+c. The code gives us back the eact foor of 0, since the interval falls right on the zero. 
+
+With the second interval gives is an error output of 1 since the ends of the interval have the same sign when input into the function. 
+
+
+
+3. 
+a. The funtion gives back the output that we expect with 7^(1/5) being the fixed point. 
+
+b. This function does not give back 7^(1/5) as the fixed point, it gives back an overflow error. This function had an issue with the x^5 part of the equation, which can grow very quickly into overflow. 
+
+c. This function does not give back 7^(1/5) as the fixed point, it gives back an overflow error. It has the same issue as part b. 
+
+c. This function does not give back 7^(1/5) as the fixed point, it gives back an overflow error. It has the same issue as part b. 
+
+
