@@ -1,0 +1,23 @@
+LAB 5 
+
+PRE LAB 
+
+import numpy as np 
+
+h = 0.01 * (1/2**(np.arange(0, 10)))
+s=np.pi/2
+
+fds1 = (-np.sin(s+h)+np.sin(s))/h
+
+fds2 = (-np.sin(s+h)+np.sin(s-h))/2*h
+
+print(fds1)
+print(fds2)
+
+The forward difference method gives the following approximations for f'(pi/2)
+[4.99995833e-03 2.49999479e-03 1.24999935e-03 6.24999919e-04
+ 3.12499990e-04 1.56249999e-04 7.81250002e-05 3.90625004e-05
+ 1.95312509e-05 9.76562546e-06]
+
+THe centered difference method gives the following approximations for f'(pi/2)
+[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
