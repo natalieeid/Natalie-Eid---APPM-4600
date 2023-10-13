@@ -1,0 +1,26 @@
+LAB  7
+
+3.1 
+
+See monomial.py for code for monomial polynomial. (There is no visible error in this code that I can see and I have compared with several class mates, but no matter my imputs for a, b, or N, I get that the Vandermonde matrix is singular and cannot be inverted, which is not far from what I had expected as it is an ill conditioned matrix most of the time, but I think feel some interval should have given the correct outputs)
+
+All graphs should also be in the git repository :) 
+
+When we use the interval of -1, 1 and 3 nodes, we get a row of zeros in our Vandermonde matrix, thus the matrix is singular and cannot be inverted. 
+
+However using Lagrange polynomials, we find that the polynomial is very good at approximating values near the evaluating nodes of the figure. 
+
+As we increase the number of values that we are using to complete our interpolation, the closer to the actuall values of the funciton we get at these points. As always the polynomial evaluations at the node is always accurate. Moreover as N gets bigger the error gets smaller, as expected. 
+
+However, as we move away from the center, the estimating power of our polynomial gets increasignly worse, making predictions not inside our itnerval would be almost entirely pointless. 
+
+
+3.2 
+
+    j = np.linspace(a,b,N+1)
+    xint = np.zeros(N+1)
+    for i in range(N+1) : 
+      xint[i] = np.cos((2*j[i] -1)*np.pi/2*N)
+
+
+The polynomial seems to be off by a constant, but that constant is very small, moreover, the function seems to be slightly underestimating the funtion to the left of center and overestimating the function to the right of the center. 
