@@ -1,0 +1,18 @@
+LAB 8 
+
+PRE LAB 
+
+1. 
+
+def interval_inds(xeval, xint): 
+   inds = []
+   for n in range(len(xint)) : 
+      inds.append(np.where(xval <= xint)
+   return inds
+
+2. 
+def line(data, xeval) : 
+   m = (data[1][1] - data[0][1])/(data[1][0] - data[0][0])
+   b = data[0][1] - m * data[0][0]
+   yeval = m * x + b   
+   return yeval

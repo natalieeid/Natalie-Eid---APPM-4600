@@ -1,0 +1,151 @@
+Microsoft Windows [Version 10.0.22621.2134]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\natal>python3
+
+C:\Users\natal>python3 --version
+Python 3.11.5
+
+C:\Users\natal>python3
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2+@
+  File "<stdin>", line 1
+    2+@
+      ^
+SyntaxError: invalid syntax
+>>> 2+2
+4
+>>> import numpy as np
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+>>> exit()
+
+C:\Users\natal>pip install numpy
+Collecting numpy
+  Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/72/b2/02770e60c4e2f7e158d923ab0dea4e9f146a2dbf267fec6d8dc61d475689/numpy-1.25.2-cp311-cp311-win_amd64.whl.metadata
+  Downloading numpy-1.25.2-cp311-cp311-win_amd64.whl.metadata (5.7 kB)
+Downloading numpy-1.25.2-cp311-cp311-win_amd64.whl (15.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.5/15.5 MB 11.3 MB/s eta 0:00:00
+Installing collected packages: numpy
+  WARNING: The script f2py.exe is installed in 'C:\Users\natal\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed numpy-1.25.2
+
+C:\Users\natal>
+C:\Users\natal>
+C:\Users\natal>pip install matplotlib
+Collecting matplotlib
+  Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/4d/9c/65830d4a56c47f5283eaa244dc1228c5da9c844a9f999ebcc2e69bf6cc65/matplotlib-3.7.2-cp311-cp311-win_amd64.whl.metadata
+  Downloading matplotlib-3.7.2-cp311-cp311-win_amd64.whl.metadata (5.8 kB)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Obtaining dependency information for contourpy>=1.0.1 from https://files.pythonhosted.org/packages/16/09/989b982322439faa4bafffcd669e6f942b38fee897c2664c987bcd091dec/contourpy-1.1.0-cp311-cp311-win_amd64.whl.metadata
+  Downloading contourpy-1.1.0-cp311-cp311-win_amd64.whl.metadata (5.7 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Obtaining dependency information for fonttools>=4.22.0 from https://files.pythonhosted.org/packages/95/b6/9a5133deb5838c4dbe3ea27e8dba123622aa5112d43a079e9587636b4faf/fonttools-4.42.1-cp311-cp311-win_amd64.whl.metadata
+  Downloading fonttools-4.42.1-cp311-cp311-win_amd64.whl.metadata (154 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.1/154.1 kB 3.1 MB/s eta 0:00:00
+Collecting kiwisolver>=1.0.1 (from matplotlib)
+  Obtaining dependency information for kiwisolver>=1.0.1 from https://files.pythonhosted.org/packages/1e/37/d3c2d4ba2719059a0f12730947bbe1ad5ee8bff89e8c35319dcb2c9ddb4c/kiwisolver-1.4.5-cp311-cp311-win_amd64.whl.metadata
+  Downloading kiwisolver-1.4.5-cp311-cp311-win_amd64.whl.metadata (6.5 kB)
+Requirement already satisfied: numpy>=1.20 in c:\users\natal\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages (from matplotlib) (1.25.2)
+Collecting packaging>=20.0 (from matplotlib)
+  Downloading packaging-23.1-py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 kB ? eta 0:00:00
+Collecting pillow>=6.2.0 (from matplotlib)
+  Obtaining dependency information for pillow>=6.2.0 from https://files.pythonhosted.org/packages/66/d4/054e491f0880bf0119ee79cdc03264e01d5732e06c454da8c69b83a7c8f2/Pillow-10.0.0-cp311-cp311-win_amd64.whl.metadata
+  Downloading Pillow-10.0.0-cp311-cp311-win_amd64.whl.metadata (9.6 kB)
+Collecting pyparsing<3.1,>=2.3.1 (from matplotlib)
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 kB ? eta 0:00:00
+Collecting python-dateutil>=2.7 (from matplotlib)
+  Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 7.7 MB/s eta 0:00:00
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib)
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading matplotlib-3.7.2-cp311-cp311-win_amd64.whl (7.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.5/7.5 MB 12.3 MB/s eta 0:00:00
+Downloading contourpy-1.1.0-cp311-cp311-win_amd64.whl (470 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 470.9/470.9 kB 9.8 MB/s eta 0:00:00
+Downloading fonttools-4.42.1-cp311-cp311-win_amd64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 12.2 MB/s eta 0:00:00
+Downloading kiwisolver-1.4.5-cp311-cp311-win_amd64.whl (56 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.1/56.1 kB ? eta 0:00:00
+Downloading Pillow-10.0.0-cp311-cp311-win_amd64.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 11.4 MB/s eta 0:00:00
+Installing collected packages: six, pyparsing, pillow, packaging, kiwisolver, fonttools, cycler, contourpy, python-dateutil, matplotlib
+  WARNING: The scripts fonttools.exe, pyftmerge.exe, pyftsubset.exe and ttx.exe are installed in 'C:\Users\natal\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed contourpy-1.1.0 cycler-0.11.0 fonttools-4.42.1 kiwisolver-1.4.5 matplotlib-3.7.2 packaging-23.1 pillow-10.0.0 pyparsing-3.0.9 python-dateutil-2.8.2 six-1.16.0
+
+C:\Users\natal>
+C:\Users\natal>python3
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import numpy as np
+>>> #3.1
+>>> x=[1,2,3] 
+>>> 3*x
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> y=np.array([1,2,3])
+>>> 3*y
+array([3, 6, 9])
+>>> print('this is 3y',3*y)
+this is 3y [3 6 9]
+>>> import matplotlib.pyplot as plt
+>>> X=np.linspace(0,2*np.pi,100)
+>>> Ya=np.sin(X)
+>>> Yb=np.cos(X)
+>>> plt.plot(X,Ya)
+[<matplotlib.lines.Line2D object at 0x000001F2F04A05D0>]
+>>> plt.plot(X,Yb)
+[<matplotlib.lines.Line2D object at 0x000001F2F1821410>]
+>>> plt.show()
+>>>
+>>>
+>>>
+>>> >>>$#33###...hhh.
+  File "<stdin>", line 1
+    >>>$#33###...hhh.
+    ^^
+SyntaxError: invalid syntax
+>>> plt.plot(X,Ya)
+[<matplotlib.lines.Line2D object at 0x000001F2F18A9010>]
+>>> # the size of X is 100. Linspace takes an interval and an integer and evenly divides the interval into that number of subint
+ervals and save those values as a vector.
+>>>  X=np.linspace(0,2*np.pi,100)
+  File "<stdin>", line 1
+    X=np.linspace(0,2*np.pi,100)
+IndentationError: unexpected indent
+>>> X=np.linspace(0,2*np.pi,100)
+>>> Ya=np.sin(X)
+>>> Yb=np.cos(X)
+>>> plt.plot(X,Ya)
+[<matplotlib.lines.Line2D object at 0x000001F2F18A9810>]
+>>> plt.plot(X,Yb)
+[<matplotlib.lines.Line2D object at 0x000001F2F18AA090>]
+>>> plt.xlabel('x')
+Text(0.5, 0, 'x')
+>>> plt.ylabel('y')
+Text(0, 0.5, 'y')
+>>> plt.show()
+>>> #3.2
+>>>
+>>> x=np.linspace(1,10,10)
+>>> x
+array([ 1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9., 10.])
+>>> y=np.array([1,2,3,4,5,6,7,8,9,10])
+>>> x[0:2]
+array([1., 2.])
+>>> x[0:3]
+array([1., 2., 3.])
+>>> print('the first three entries of x are',x[0:3])
+the first three entries of x are [1. 2. 3.]
+>>> w=10**(-np.linspace(1,10,10))
+>>> w
+array([1.e-01, 1.e-02, 1.e-03, 1.e-04, 1.e-05, 1.e-06, 1.e-07, 1.e-08,
+       1.e-09, 1.e-10])
+>>>

@@ -1,0 +1,52 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+def driver():
+
+    f = lambda x: 1 / (1 + (10 * x) ** 2)
+
+    N = 4
+    a = -1
+    b = 1
+
+    # Create equispaced interpolation nodes
+    j = np.linspace(a, b, N + 1)
+    xint = np.zeros(N + 1)
+    for i in range(N + 1):
+        xint[i] = np.cos((2 * j[i] - 1) * np.pi / (2 * N))
+
+    # Create interpolation data
+    yint = f(xint)
+
+    # Create points for evaluating the monomial interpolating polynomial
+    Neval = 1000
+    xeval = np.linspace(a, b, Neval + 1)
+    yeval_m = np.zeros(Neval + 1)
+
+    # Evaluate monomial polynomial
+    for kk in range(Neval + 1):
+        yeval_m[kk] = eval_monomial(xeval[kk], xint, yint)
+
+    # Create vector with exact values
+    fex = f(xeval)
+
+    plt.figure()
+    plt.plot(xeval, fex, 'ro-')
+    plt.plot(xeval, yeval_m, 'bs--')
+    plt.legend()
+    plt.show()
+
+def eval_monomial(xeval, xint, yint):
+    N = len(xint)
+    yeval = 0.0
+
+    for j in range(N):
+        term = yint[j]
+        for i in range(N):
+            if i != j:
+                term *= (xeval - xint[i]) / (xint[j] - xint[i])
+        yeval += term
+
+    return yeval
+
+driver()
