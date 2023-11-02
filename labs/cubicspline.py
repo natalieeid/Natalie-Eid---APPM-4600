@@ -7,7 +7,7 @@ from numpy.linalg import inv
 def driver():
     
     f = lambda x: 1 / (1 + (10*x)**2)
-    a = 0
+    a = -1
     b = 1
     
     ''' create points you want to evaluate at'''
